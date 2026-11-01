@@ -1,0 +1,22 @@
+{
+    "first_name": "srikar",
+    "last_name": "ponneboina",
+    "age": 27,
+    "addresses": [
+       {
+            "type": "permanent",
+            "doorno": "1-21",
+            "city": "Hyderabad"
+        },
+        {        
+            "type": "temporary",
+            "doorno": "1-100",
+            "city": "warangal"
+        }       
+    ],
+    "skills": {
+        "os": "linux",
+        "IDE": "vscode",
+        "CM": "ansible"
+    }
+}
