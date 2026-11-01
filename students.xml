@@ -2,13 +2,13 @@
 <first_name>Srikar</first_name>
 <last_name>Ponneboina</last_name>
 <age>27</age>
-<address>
-    <address type = temporary>
+<addresses>
+    <address type = "temporary"></address>
     <doorno>1-21</doorno>
     <city>Hyderabad</city>
 
-    <address type = permanent>
+    <address type = "permanent"></address>
     <doorno>100-1</doorno>
     <city>Warangal</city>
-</address>
+</addresses>
 </student>
