@@ -1,14 +1,15 @@
 <student>
-<first_name>Srikar</first_name>
-<last_name>Ponneboina</last_name>
-<age>27</age>
-<addresses>
-    <address type = "temporary"></address>
-    <doorno>1-21</doorno>
-    <city>Hyderabad</city>
-
-    <address type = "permanent"></address>
-    <doorno>100-1</doorno>
-    <city>Warangal</city>
-</addresses>
+    <first_name>Srikar</first_name>
+    <last_name>Ponneboina</last_name>
+    <age>27</age>
+    <addresses>
+        <address type = "temporary">
+            <doorno>1-21</doorno>
+            <city>Hyderabad</city>
+        </address>
+        <address type = "permanent">
+            <doorno>100-1</doorno>
+            <city>Warangal</city>
+        </address>
+    </addresses>
 </student>
