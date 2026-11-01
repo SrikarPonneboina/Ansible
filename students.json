@@ -22,7 +22,7 @@
 }
 
 
-/* points to be noted
+{/* points to be noted
 key-value pairs : Data is written as "key": value
 double quotes: " " all property key names and strings values must use double quotes
 (" "), not single quotes 
@@ -34,5 +34,5 @@ array: an ordered list of values enclosed in square brackets [] eg [1,2,3]
 object: A nested collection of key-value pairs enclosed in curly braces {}
 null: an empty or null value represented by null
 No functions or undefined: JSON cannot store functions, undefined, or date objects
-*/
+*/}
 
