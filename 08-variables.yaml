@@ -13,7 +13,7 @@
   tasks:
   - name: Printing variables from the user input - prompt
     debug: 
-      msg: "Hello this is your {{ name }} and your learning {{ course }}"
+      msg: "Hello {{ name }} and your learning {{ course }}"
     
   - name: printing variables from task 2
     vars: 
