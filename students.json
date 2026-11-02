@@ -1,23 +1,23 @@
 {
-    "first_name": "srikar",
-    "last_name": "ponneboina",
-    "age": 27,
-    "addresses": [
-       {
+    "first_name": "Srikar",
+    "last_name": "Ponneboina",
+    "age": "27",
+    "addresses":[
+        {
             "type": "permanent",
-            "doorno": "1-21",
+            "doorno": "1-100",
             "city": "Hyderabad"
         },
-        {        
+        {
             "type": "temporary",
-            "doorno": "1-100",
-            "city": "warangal"
-        }       
+            "doorno": "3-100",
+            "city": "Warangal"
+        }
     ],
-    "skills": {
-        "os": "linux",
-        "IDE": "vscode",
-        "CM": "ansible"
+    "skills" {
+        "OS": "linux",
+        "IDE": "VSCode",
+        "CM": "Ansible"
     }
 }
 
