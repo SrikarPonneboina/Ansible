@@ -23,5 +23,6 @@
         session: "{{ session_live }} : {{ session_live | type_debug}}"
         topics: "{{ topics }} : {{ topic | type_debug }}"
         more details: "{{ more_details_ansible }} : {{ more_details_ansible | type_debug }}"
-        exact duration in months: "{{ exact_duration_in_months }} : {{ exact_duration_in_months | type_debug}}"
+        exact duration in months: "{{ exact_duration_in_months }} : {{ exact_duration_in_months | type_debug }}"
+        
 
