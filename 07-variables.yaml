@@ -1,7 +1,7 @@
 - name: variables from files
   hosts: local
   connection: local
-  vars_files:  #this takes variables from the file details.yaml while executing
+  vars_files:  #this takes variables from the file details.yaml while executing it loads the file here
   - details.yaml
 
   tasks:

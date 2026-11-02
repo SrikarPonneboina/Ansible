@@ -1,7 +1,7 @@
 - name: demo on variables
   hosts: local
   connection: local
-  vars:
+  vars: #vars.. are the variables which stores values
     name: Srikar
     course: Ansible
   tasks:
