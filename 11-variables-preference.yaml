@@ -3,10 +3,10 @@
   connection: local
   vars:
   - course: Ansible from PLAY
-  vars_prompt:
-  - name: course
-    prompt: please enter your course
-    private: false
+  # vars_prompt:
+  # - name: course
+  #   prompt: please enter your course
+  #   private: false
   vars_files:
   - details.yaml 
 
@@ -17,4 +17,8 @@
     debug:
       msg: "Hi, I'm learning {{ course }}"
 
-#1. Task
+#1. Commandline
+#2. Task
+#3. File
+#4. Prompt
+#5. 
