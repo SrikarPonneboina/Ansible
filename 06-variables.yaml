@@ -1,6 +1,6 @@
 - name: demo on task level variables
   hosts: local
-  connections: local
+  connection: local
   vars:
     name: Srikar
     course: Ansible
