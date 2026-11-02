@@ -1,8 +1,8 @@
 - name: variables preferences
   hosts: local
   connection: local
-  vars:
-  - course: Ansible from PLAY
+  # vars:
+  # - course: Ansible from PLAY
   # vars_prompt:
   # - name: course
   #   prompt: please enter your course
@@ -21,4 +21,5 @@
 #2. Task
 #3. File
 #4. Prompt
-#5. 
+#5. PLAY
+#6. 
