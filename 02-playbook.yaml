@@ -1,8 +1,7 @@
-- name: print statement
+- name: print statement debug
   host: local
   connection: local
   tasks:
   - name: Print statement
     debug:
       msg: "Hello from Ansible..!"
-      
