@@ -1,0 +1,11 @@
+- name: variables from files
+  hosts: local
+  connection: local
+  vars_files:
+  - details.yaml
+
+  tasks:
+  - name: printing variables from files
+    debug: 
+      msg: "Hello, Hi.. My name is {{ name }}, I'm learning {{ course }}"
+      
