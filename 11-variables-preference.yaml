@@ -1,19 +1,19 @@
 - name: variables preferences
   hosts: local
   connection: local
-  # vars:
-  # - course: Ansible from PLAY
-  # vars_prompt:
-  # - name: course
-  #   prompt: please enter your course
-  #   private: false
+  vars:
+  - course: Ansible from PLAY
+  vars_prompt:
+  - name: course
+    prompt: please enter your course
+    private: false
   vars_files:
   - details.yaml 
 
   tasks:
   - name: printing variables preferences
-    # vars:
-    # - course: Ansible from task
+    vars:
+    - course: Ansible from task
     debug:
       msg: "Hi, I'm learning {{ course }}"
 
