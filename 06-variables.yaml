@@ -1,0 +1,16 @@
+- name: demo on task level variables
+  hosts: local
+  connections: local
+  vars:
+    name: Srikar
+    course: Ansible
+  tasks:
+  - name: Printing variable from task-1
+    debug:
+      msg: "Hi My name is {{ name }}, I'm learning {{ course }}"
+  - name: printing variables from task-2
+    vars:
+      name: Avinash
+      course: Software development
+    debug:
+    msg: "Hi My name is {{ name }}, I'm learning {{ course }}"
