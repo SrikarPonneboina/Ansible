@@ -1,4 +1,4 @@
-- name: demo on variables
+- name: demo on varaibles
   hosts: local
   connection: local
   vars: #vars.. are the variables which stores values
