@@ -3,5 +3,5 @@
   connection: local
   tasks:
   - name: Print statement
-    debug:
+    ansible.builtin.debug:
       msg: "Hello from Ansible..!"
