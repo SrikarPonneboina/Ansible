@@ -12,8 +12,9 @@
 
   tasks:
   - name: printing variables preferences
-    vars:
-    - course: Ansible from task
+    # vars:
+    # - course: Ansible from task
     debug:
       msg: "Hi, I'm learning {{ course }}"
 
+#1. Task
