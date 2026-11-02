@@ -9,5 +9,24 @@
     debug:
       msg: |
         OS Family: {{ ansible_facts['os_family'] }}
-        private_ip: {{ ansible_facts.default_ipv4.address }}
+        private_ip: {{ ansible_facts.default_ipv4.address }} 
         private_ip: {{ ansible_facts['default_ipv4']['address'] }}
+
+#for private_ip the output is same we are taking output from ansible_facts and
+#checking them {{ ansible_facts.default_ipv4.address }} from ansible_facts
+#from default_ipv4 we are taking address
+
+#example how it is taken
+#  "default_ipv4": {
+#             "address": "172.31.31.203",
+#             "alias": "ens5",
+#             "broadcast": "172.31.31.255",
+#             "gateway": "172.31.16.1",
+#             "interface": "ens5",
+#             "macaddress": "0a:ff:e8:6f:9b:d7",
+#             "mtu": 9001,
+#             "netmask": "255.255.240.0",
+#             "network": "172.31.16.0",
+#             "prefix": "20",
+#             "type": "ether"
+#         },
