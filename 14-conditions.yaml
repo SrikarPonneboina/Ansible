@@ -7,9 +7,9 @@
   - name: check number is even
     debug:
       msg: "Hi, This is even : {{ number }}"
-    when: number % 2 == 0 #expression
+    when: number % 2 == 0 #expression checks for the remainder eg: 10/2 =remainder==0
   
   - name: check number is odd
     debug:
       msg: "Hi, This is odd : {{ number }}"
-    when: number % 2 != 0 #expression
+    when: number % 2 != 0 #expression 10/2=5; 5 is not equal to zero so it skips
