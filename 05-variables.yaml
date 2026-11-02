@@ -1,0 +1,10 @@
+- name: demo on variables
+  hosts: local
+  connection: local
+  vars:
+    name: Srikar
+    course: Ansible
+  tasks:
+  - name: printing variables
+    debug:
+      msg: "Hi my name is {{ name }} I'm learning {{ course }}"
