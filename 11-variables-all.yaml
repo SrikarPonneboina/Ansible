@@ -4,10 +4,7 @@
   vars:
     name: Srikar
     course: Ansible
-
-  tasks:
-  - name: printing variables from prompt
-    vars_prompt:
+  vars_prompt:
     - name: name
       prompt: what is your name
       private: false
@@ -15,8 +12,7 @@
     - name: course
       prompt: what are you learning
       private: true
-    debug:
-      msg: "Hi My name is {{ name }}, I'm learning {{ course }}"
+  tasks:
   - name: printing variables
     debug: 
       msg: "Hi my name is {{ name }}, I'm learning {{ course }}"
@@ -28,5 +24,7 @@
     debug:
       msg: "Hi..My name is {{ name }}, I'm learning {{ course }}"
 
-
+  - name: printing variables from prompt
+    debug:
+      msg: "Hi My name is {{ name }}, I'm learning {{ course }}"
   
