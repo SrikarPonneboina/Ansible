@@ -1,0 +1,23 @@
+- name: Running multiple playbooks - PLAY-1
+  hosts: local
+  connection: local
+  tasks:
+  - name: Play-1 and Task-1
+    debug:
+      msg: "Hello this is Play-1 from Task-1"
+
+  - name: Play-1 and Task-2
+    debug:
+      msg: "Hello this is Play-1 from Task-2"
+
+- name: Running multiple playbooks - PLAY-2
+  hosts: local
+  connection: local
+  tasks:
+  - name: Play-2 and Task-1
+    debug:
+      msg: "Hello this is Play-2 from Task-1"
+
+  - name: Play-2 and Task-2
+    debug:
+      msg: "Hello this is Play-2 from Task-2"
