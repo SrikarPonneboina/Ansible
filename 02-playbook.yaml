@@ -1,5 +1,5 @@
 - name: demo on bebug
-  host: local
+  hosts: local
   connection: local
   tasks:
   - name: Print statement
