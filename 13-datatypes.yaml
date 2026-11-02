@@ -20,5 +20,8 @@
       msg: |
         name: "{{ name }} : {{ name | type_debug }} "
         duration: "{{ duration_in_hrs }} : {{ duration_in_hrs | type_debug }}"
-        session: "{{ session_live }} : {{ session_live | type_debug}}"
-        
+        session: "{{ session_live | type_debug}}"
+        topics: "{{ topics }} : {{ topic | type_debug }}"
+        more details: "{{ more_details_ansible }} : {{ more_details_ansible | type_debug }}"
+
+
