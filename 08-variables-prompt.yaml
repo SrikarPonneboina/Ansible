@@ -7,7 +7,7 @@
     private: no
   
   - name: course
-    prompt: plese enter what your learning
+    prompt: plese enter what are you learning
     private: yes
 
   tasks:
