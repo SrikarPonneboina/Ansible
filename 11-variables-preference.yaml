@@ -15,5 +15,5 @@
     vars:
     - course: Ansible from task
     debug:
-    msg: "Hi, I'm learning {{ course }}"
+      msg: "Hi, I'm learning {{ course }}"
 
