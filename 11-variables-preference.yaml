@@ -11,8 +11,9 @@
   - details.yaml 
 
   tasks:
-  vars:
-  - course: Ansible from task
-  debug:
+  - name: printing variables preferences
+    vars:
+    - course: Ansible from task
+    debug:
     msg: "Hi, I'm learning {{ course }}"
 
