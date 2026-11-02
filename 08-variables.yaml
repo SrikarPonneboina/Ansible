@@ -1,0 +1,23 @@
+- name: variable from user input prompt
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: name
+    prompt: please enter your name
+    private: no
+  
+  - name: course
+    prompt: plese enter what your learning
+    private: yes
+
+  tasks:
+  - name: Printing variables from the user input - prompt
+    debug: 
+      msg: "Hello this is your {{ name }} and your learning {{ course }}"
+    
+  - name: printing variables from task 2
+    vars: 
+      name: Srikar
+      course: Ansible
+    debug:
+      msg: "Hi my name is {{ name }}, I'm learning {{ course }}"
