@@ -1,4 +1,5 @@
 {
+"profiles": {
     "first_name": "Srikar",
     "last_name": "Ponneboina",
     "age": "27",
@@ -14,15 +15,13 @@
             "city": "Warangal"
         }
     ],
-    "skills" {
+    "skills": {
         "OS": "linux",
         "IDE": "VSCode",
         "CM": "Ansible"
     }
-}
+},
 
-
-{
   "points_to_be_noted": {
     "key_value_pairs": "Data is written as \"key\": value",
     "double_quotes": "all property key names and strings values must use double quotes (\" \"), not single quotes",
@@ -35,7 +34,58 @@
       "null": "an empty or null value represented by null"
     },
     "no_functions_or_undefined": "JSON cannot store functions, undefined, or date objects"
-  }
+    },
+    "Comments": {
+        "_comment_1": "1. SCALAR TYPES (Basic Key-Value Pairs)",
+        "string_value": "Hello World. Special characters like colons: and emojis are allowed here.",
+        "integer_value": 42,
+        "float_value": 3.14159,
+        "boolean_true": true,
+        "boolean_false": false,
+        "null_value": null,
+
+            "_comment_2": "2. COLLECTIONS (Arrays)",
+            "programming_languages": [
+                "Python",
+                "JavaScript",
+                "Rust"
+            ],
+            "frameworks": ["React", "Django", "FastAPI"],
+
+            "_comment_3": "3. MAPPINGS (Nested Objects)",
+            "user_profile": {
+                "username": "dev_guru",
+                "active": true,
+                "roles": [
+                "admin",
+                "developer"
+                ]
+            },
+
+            "_comment_4": "4. MIXED COMPLEX STRUCTURES (Array of Objects)",
+            "servers": [
+                {
+                "host": "192.168.1.10",
+                "role": "web-server",
+                "ports": [80, 443]
+                },
+                {
+                "host": "192.168.1.11",
+                "role": "db-server",
+                "ports": [5432]
+                }
+            ],
+
+            "_comment_5": "5. MULTI-LINE STRINGS",
+            "preserve_newlines": "This is line one.\nThis is line two.\nEvery line break must be escaped with an 'n'.",
+            "fold_newlines": "This long sentence will be interpreted as a single continuous line of text, which is great for long descriptions."
+            }
+
 }
+
+
+
+
+
 
 
