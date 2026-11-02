@@ -1,0 +1,24 @@
+- name: printing different data types
+  hosts: local
+  connection: local
+  vars:
+  - name: "Learning Ansible" #string
+    duration_in_hrs: 8 #int
+    session_live: true #boolean
+    topics: #list
+    - shell
+    - Ansible
+    - Terraform
+    - docker
+    more_details_ansible: #dictionary/map
+      control_node: CM
+      managed_node: target server
+    exact_duration_in_months: 4.5 #float
+  tasks:
+  - name: printing data types
+    debug:
+      msg: |
+        name: "{{ name }} : {{ name | type_debug }} "
+        duration: "{{ duration_in_hrs }} : {{ duration_in_hrs | type_debug }}"
+        session: "{{ session_live }} : {{ session_live | type_debug}}"
+        
