@@ -8,10 +8,10 @@
   - name: Printing variable from task-1
     debug:
       msg: "Hi My name is {{ name }}, I'm learning {{ course }}"
-      
+
   - name: printing variables from task-2
     vars:
       name: Avinash
-      course: Software development
+      course: "Software development"
     debug:
     msg: "Hi My name is {{ name }}, I'm learning {{ course }}"
