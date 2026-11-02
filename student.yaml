@@ -1,4 +1,5 @@
-- first_name: "Srikar"
+- profiles: "Employee"
+  first_name: "Srikar"
   last_name: "Ponneboina"
   Age: 27
   # here - is list
