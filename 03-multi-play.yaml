@@ -1,20 +1,21 @@
-- name: PLAY-1 | Environment setup & validation
+- name: PLAY-1
   hosts: local
   connection: local
   tasks:
-  - name: "DISPLAY TITLE"
+  - name: TASK-1 and PLAY-1
+    debug: 
+      msg: "Hello this is TASK-1 from PLAY-1"
+  - name: TASK-1 and PLAY-2
     debug:
-      msg: "============================"
-  - name: "Display current execution context"
+      msg: "Hello this is TASK-2 from PLAY-2"
+
+- name: PLAY-2
+  hosts: local
+  connection: local
+  tasks:
+  - name: TASK-1 and PLAY-2
     debug:
-      msg: "Executing play-1: Running basic validation tasks"
-  - name: "PLAY-1"
+      msg: "Hello this is TASK-1 and PLAY-2"
+  - name: TASK-2 and PLAY-2
     debug:
-      msg: "Hello this is PLAY-1 from TASK-1"
-  - name: "Display current execution context"
-    debug:
-      msg: "Executing play-1: Running basic validation tasks"
-  - name: "PLAY-1"
-    debug:
-      msg: "Hello this is PLAY-1 from TASK-1"
-    
+      msg: "Hello this is TASK-2 from PLAY-2"
