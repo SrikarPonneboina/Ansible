@@ -4,19 +4,8 @@
   vars:
     name: Srikar
     course: Ansible
-    
-  tasks:
-  - name: printing variables
-    debug: 
-      msg: "Hi my name is {{ name }}, I'm learning {{ course }}"
-  
-  - name: printing variabels on task level
-    vars:
-      name: Avinash
-      course: Software development
-    debug:
-      msg: "Hi..My name is {{ name }}, I'm learning {{ course }}"
 
+  tasks:
   - name: printing variables from prompt
     vars_prompt:
     - name: name
@@ -28,4 +17,16 @@
       private: true
     debug:
       msg: "Hi My name is {{ name }}, I'm learning {{ course }}"
+  - name: printing variables
+    debug: 
+      msg: "Hi my name is {{ name }}, I'm learning {{ course }}"
+  
+  - name: printing variabels on task level
+    vars:
+      name: Avinash
+      course: Software development
+    debug:
+      msg: "Hi..My name is {{ name }}, I'm learning {{ course }}"
+
+
   
