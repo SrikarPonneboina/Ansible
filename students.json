@@ -22,17 +22,20 @@
 }
 
 
-{/* points to be noted
-key-value pairs : Data is written as "key": value
-double quotes: " " all property key names and strings values must use double quotes
-(" "), not single quotes 
-Datatypes:
-string: eg "srikar"
-Number: integer/floating-point eg: 27, 2.12
-boolea: true or false without quotes
-array: an ordered list of values enclosed in square brackets [] eg [1,2,3]
-object: A nested collection of key-value pairs enclosed in curly braces {}
-null: an empty or null value represented by null
-No functions or undefined: JSON cannot store functions, undefined, or date objects
-*/}
+{
+  "points_to_be_noted": {
+    "key_value_pairs": "Data is written as \"key\": value",
+    "double_quotes": "all property key names and strings values must use double quotes (\" \"), not single quotes",
+    "datatypes": {
+      "string": "eg \"srikar\"",
+      "number": "integer/floating-point eg: 27, 2.12",
+      "boolean": "true or false without quotes",
+      "array": "an ordered list of values enclosed in square brackets [] eg [1,2,3]",
+      "object": "A nested collection of key-value pairs enclosed in curly braces {}",
+      "null": "an empty or null value represented by null"
+    },
+    "no_functions_or_undefined": "JSON cannot store functions, undefined, or date objects"
+  }
+}
+
 
