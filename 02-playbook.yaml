@@ -1,4 +1,4 @@
-- name: debug Print
+- name: demo on bebug
   host: local
   connection: local
   tasks:
