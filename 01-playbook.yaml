@@ -1,0 +1,6 @@
+- name: ping local host demo
+  hosts: localhost #targer ansible local server itself
+  connection: local #it will not except credentials
+  tasks: ## Task ==modules == collections
+  - name: ping localhost
+    ping:
