@@ -1,11 +1,10 @@
 - name: variables from files
   hosts: local
   connection: local
-  vars_files:
+  vars_files:  #this takes variables from the file details.yaml while executing
   - details.yaml
 
   tasks:
   - name: printing variables from files
     debug: 
       msg: "Hello, Hi.. My name is {{ name }}, I'm learning {{ course }}"
-      
