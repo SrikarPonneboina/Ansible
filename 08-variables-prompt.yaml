@@ -6,7 +6,7 @@
     prompt: please enter your name
     private: no
   
-  - course: "Ansible from prompt" 
+  - name: course
     prompt: plese enter what are you learning
     private: yes
 
