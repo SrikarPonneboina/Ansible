@@ -1,5 +1,5 @@
-- name: varaibles from inventory
-  hosts: frontend
+- name: varaibles from inventory 
+  hosts: frontend #here variables are taken from the inventory; i.e variables are declared under inventory 
   tasks:
   - name: printing variables from inventory
     debug:
