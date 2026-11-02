@@ -1,0 +1,31 @@
+- name: writing variables all together
+  hosts: local
+  connection: local
+  vars:
+    name: Srikar
+    course: Ansible
+  vars_prompt:
+  - name: name
+    prompt: what is your name
+    private: false
+  
+  - name: course
+    prompt: what are you learning
+    private: true
+
+  tasks:
+  - name: printing variables
+    debug: 
+      msg: "Hi my name is {{ name }}, I'm learning {{ course }}"
+  
+  - name: printing variabels on task level
+    vars:
+      name: Avinash
+      course: Software development
+    debug:
+      msg: "Hi..My name is {{ name }}, I'm learning {{ course }}"
+      
+  - name: printing variables from prompt
+    debug:
+      msg: "Hi My name is {{ name }}, I'm learning {{ course }}"
+  
