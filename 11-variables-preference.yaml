@@ -4,12 +4,12 @@
   vars:
   - course: Ansible from PLAY
   vars_prompt:
-  - course: Ansible from prompt
+  - name: course
     prompt: please enter your course
     private: false
   vars_files:
   - details.yaml 
-  
+
   tasks:
   vars:
   - course: Ansible from task
