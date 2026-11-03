@@ -4,9 +4,9 @@
   become: yes
   vars:
     package:
-    - { - name: 'nginx', state: 'absent' }
-    - { - name: 'mysql', state: 'present'}
-    - { - name: 'git', state: 'present'}
+    - { name: 'nginx', state: 'absent' }
+    - { name: 'mysql', state: 'present'}
+    - { name: 'git', state: 'present'}
   tasks:
   - name: install packages
     package:
