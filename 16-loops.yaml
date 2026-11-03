@@ -7,4 +7,4 @@
   tasks:
     debug:
       msg: "{{ item }}"
-    loop: {{ package }}
+    loop: "{{ package }}"
