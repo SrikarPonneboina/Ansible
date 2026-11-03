@@ -14,6 +14,9 @@
 
   - name: creating user roboshop
     command: useradd roboshop
-    debug:
-      msg: "User created roboshop"
     when: user_output.rc != 0
+
+  - name: print success message
+    debug:
+      msg: "User created successfully"
+    when: user_output.changed
