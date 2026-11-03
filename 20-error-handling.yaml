@@ -1,6 +1,7 @@
 - name: error handling in yaml
   hosts: local
   connection: local
+  become: yes
   tasks:
   - name: user roboshop exists or not
     command: id roboshop
