@@ -1,6 +1,7 @@
 - name: Loops
   hosts: local
   connection: local
+  become: yes
   vars:
     package:
     - nginx
