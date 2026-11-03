@@ -10,7 +10,7 @@
   - name: Install package
     package:
       state: present
-      name: "{{ package }}"
+      name: "{{ item }}"
     debug:
       msg: "Hi Installing {{ package }}"
     loop: "{{ package }}"
