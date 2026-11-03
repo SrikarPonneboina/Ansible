@@ -12,7 +12,7 @@
   tasks:
   - name: convert comma-seperated string to a list 
     debug:
-      msg: "{{ topics }} : {{ topics.split(, ) }}"
+      msg: "{{ topics }} : {{ topics.split(', ') }}"
   
   - name: convert list to string
     debug:
