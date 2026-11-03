@@ -2,6 +2,7 @@
   hosts: local
   connection: local
   tasks:
+  - name: Loops printing
     debug:
       msg: "{{ item }}"
     loop: 
