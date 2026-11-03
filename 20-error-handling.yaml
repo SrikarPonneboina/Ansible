@@ -13,6 +13,4 @@
 
   - name: creating user roboshop
     command: useradd roboshop
-    debug:
-      msg: "creating user"
     when: user_output.rc != 0
