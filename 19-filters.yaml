@@ -12,11 +12,11 @@
   tasks:
   - name: convert string to list
     debug:
-      msg: "{{ topics }} : {{ topics.split (',')}}"
+      msg: "{{ topics }} : {{ topics.split(',')}}"
   
   - name: convert list to string
     debug:
-      msg: "{{ names | join(',') }}"
+      msg: "{{ names | join(', ') }}"
   
   - name: convert to lower case letter
     debug:
