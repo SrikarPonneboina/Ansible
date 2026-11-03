@@ -1,0 +1,12 @@
+- name: error handling in yaml
+  hosts: local
+  connection: local
+  tasks:
+  - name: user roboshop exists or not
+    command: id roboshop
+    register: user_output
+
+  - name: printing user
+    debug:
+      msg: "{{ user_output }}"
+      
