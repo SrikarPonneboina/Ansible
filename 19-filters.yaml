@@ -11,7 +11,7 @@
     duration: "4"
   tasks:
   - name: convert comma-seperated string to a list 
-    debug:
+    ansible.builtin.debug:
       msg: "{{ topics }} : {{ topics.split(', ') }}"
   
   - name: convert list to string
