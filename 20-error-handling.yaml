@@ -5,8 +5,8 @@
   - name: user roboshop exists or not
     command: id roboshop
     register: user_output
+    ignore_errors: true
 
   - name: printing user
     debug:
       msg: "{{ user_output }}"
-      
