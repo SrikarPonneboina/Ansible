@@ -16,7 +16,7 @@
   
   - name: convert list to string
     debug:
-      msg: "{{ names | join(' ') }}"
+      msg: "{{ names | join(',') }}"
   
   - name: convert to lower case letter
     debug:
