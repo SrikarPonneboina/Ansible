@@ -4,9 +4,9 @@
   become: yes
   tasks:
   - name: user roboshop exists or not
-    command: id roboshop
-    register: user_output
-    ignore_errors: true
+    command: id roboshop # Linux command, when there is no ansoble module exists we can use linux commands
+    register: user_output #register is the keyword it takes output of command - id roboshop and stores in user_output
+    ignore_errors: true # for knows errors we can use ignore errors
 
   - name: printing user
     debug:
