@@ -1,0 +1,16 @@
+- name: Loops
+  hosts: local
+  connection: local
+  vars:
+    package:
+    - nginx
+    - mysql
+    - htop
+  tasks:
+  - name: Install package
+    package:
+      state: present
+      name: "{{ package }}"
+    debug:
+      msg: "Hi Installing {{ package }}"
+    loop: "{{ package }}"
