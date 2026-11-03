@@ -10,6 +10,10 @@
     topic: ANSIBLE
     duration: "4"
   tasks:
+  - name: print the person name
+    debug:
+      msg: "Hi, {{ person_name | default('Ramesh') }}"
+      
   - name: convert comma-seperated string to a list 
     ansible.builtin.debug:
       msg: "{{ topics }} : {{ topics.split(', ') }}"
