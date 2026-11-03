@@ -1,0 +1,10 @@
+- name: this is aboot loops
+  hosts: local
+  connection: local
+  vars:
+  - shell
+  - Ansible
+  tasks:
+    debug:
+      msg: "{{ item }}"
+    loop: {{ package }}
