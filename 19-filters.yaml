@@ -13,19 +13,19 @@
   - name: print the person name
     debug:
       msg: "Hi, {{ person_name | default('Ramesh') }}"
-      
+
   - name: convert comma-seperated string to a list 
     ansible.builtin.debug:
       msg: "{{ topics }} : {{ topics.split(', ') }}"
   
   - name: convert list to string
     debug:
-      msg: "{{ names | join(', ') }}"
+      msg: "Full name: {{ names | join(', ') }}"
   
   - name: convert to lower case letter
     debug:
-      msg: "{{ topic | lower }}"
+      msg: "Topic changed to lowercase: {{ topic | lower }}"
   
   - name: convert int to string
     debug:
-      msg: "{{ duration | int }}"
+      msg: "Duration changed to int: {{ duration | int }}"
