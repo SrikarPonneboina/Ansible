@@ -1,0 +1,14 @@
+- name: install packages
+  hosts: local
+  connection: local
+  vars:
+    package:
+    - { - name: 'nginx', state: 'absent' }
+    - { - name: 'mysql', state: 'present'}
+    - { - name: 'git', state: 'present'}
+  tasks:
+  - name: install packages
+    package:
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
+    loop: "{{ package }}"
