@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    topics: Linux, shell, Ansible
+    topics: "Linux, shell, Ansible"
     names:
     - Srikar
     - avinash
@@ -10,9 +10,9 @@
     topic: ANSIBLE
     duration: "4"
   tasks:
-  - name: convert string to list
+  - name: convert comma-seperated string to a list 
     debug:
-      msg: "{{ topics }} : {{ topics.split( ) | trim }}"
+      msg: "{{ topics }} : {{ topics.split(', ') }}"
   
   - name: convert list to string
     debug:
