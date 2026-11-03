@@ -5,11 +5,11 @@
   - name: test the command module
     #command: cat /etc/passwd | grep ec2-user
     shell: cat /etc/passwd | grep ec2-user
-    register: ec2-user_output
+    register: ec2_user_output
   
   - name: print the output
     debug:
-      msg: "{{ ec2-user_output }}" 
+      msg: "{{ ec2_user_output }}" 
 
   - name: get the files
     #command: ls -la > /tmp/files.txt
