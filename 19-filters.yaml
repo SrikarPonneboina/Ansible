@@ -1,0 +1,27 @@
+- name: using filters
+  hosts: local
+  connection: local
+  vars:
+    topics: Linux, shell, Ansible
+    names:
+    - Srikar
+    - avinash
+    - ponneboina
+    topic: ANSIBLE
+    duration: "4"
+  tasks:
+  - name: convert string to list
+    debug:
+      msg: "{{ topics }} : {{ topics | split (',')}}"
+  
+  - name: convert list to string
+    debug:
+      msg: "{{ names | join(' ') }}"
+  
+  - name: convert to lower case letter
+    debug:
+      msg: "{{ topic | lower }}"
+  
+  - name: convert int to string
+    debug:
+      msg: "{{ duration | int }}"
