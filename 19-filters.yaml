@@ -10,7 +10,7 @@
     topic: ANSIBLE
     duration: "4"
   tasks:
-  - name: print the person name
+  - name: print default person name
     debug:
       msg: "Hi, {{ person_name | default('Ramesh') }}"
 
