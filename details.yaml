@@ -1,2 +1,8 @@
 #name: Srikar
 #course: Ansible from file
+
+# Ansible configuration preferences
+# 1. Ansible environment variables
+# 2. Current working directory  — mostly used
+# 3. Home directory
+# 4. Default configuration 
